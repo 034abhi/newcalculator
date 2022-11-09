@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel='stylesheet'>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container mt-2 col-2" >
+    <div>
+        <input type="text" id="num1" class="form-control">
+        <input type="text" id="num2" class="form-control">
+        
+    
+
+
+    </div>
+    <span id="span"></span>
+    <br>
+    <div>
+        
+        <input type ="button" value="addition" id ="add" class="btn btn-primary">
+        <input type ="button" value="sub" id ="sub" class="btn btn-primary">
+        <input type ="button" value="multiply" id ="mult" class="btn btn-primary">
+        <input type ="button" value="divide" id ="dived" class="btn btn-primary">
+
+       
+
+
+    </div>
+    </div>
+    <script>
+        function add(){
+    var num= parseInt(document.getElementById("num1").value)
+    var num3= parseInt(document.getElementById("num2").value)
+    document.getElementById("span").innerHTML=num+num3;
+
+}
+function sub(){
+    var n= parseInt(document.getElementById("num1").value)
+    var nu3= parseInt(document.getElementById("num2").value)
+    document.getElementById("span").innerHTML= n-nu3;
+    
+}
+function mul(){
+    var a= parseInt(document.getElementById("num1").value)
+    var b= parseInt(document.getElementById("num2").value)
+    document.getElementById("span").innerHTML=a*b;
+    
+}
+function dive(){
+    var c= parseInt(document.getElementById("num1").value)
+    var d= parseInt(document.getElementById("num2").value)
+    document.getElementById("span").innerHTML=c/d;
+    
+}
+
+
+
+
+
+
+
+
+document.getElementById("add").onclick=add
+document.getElementById("sub").onclick=sub
+document.getElementById("mult").onclick=mul
+document.getElementById("dived").onclick=dive
+document.getElementById("per").onclick=per
+document.getElementById("power").onclick=power
+    </script>
+</body>
+</html>
